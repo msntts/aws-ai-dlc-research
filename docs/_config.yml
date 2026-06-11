@@ -1,7 +1,7 @@
 title: AWS AI-DLC 調査・解説ドキュメント
 description: AWS AI-Driven Development Life Cycle (AI-DLC) の包括的な調査・解説サイト
-baseurl: ""
-url: ""
+baseurl: "/aws-ai-dlc-research"
+url: "https://msntts.github.io"
 
 remote_theme: just-the-docs/just-the-docs@v0.10.0
 
