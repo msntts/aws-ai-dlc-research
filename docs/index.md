@@ -55,13 +55,24 @@ AI-DLC 概要          → 方法論の背景・哲学・メリット
 
 ## クイックスタート
 
-すでにサポートツールをインストール済みの場合は、チャットに以下のように入力するだけでAI-DLCが起動します。
+AI-DLC を効果的に使うには、起動前に以下の2つのドキュメントを準備することを強く推奨します。
+
+| ドキュメント | 内容 |
+|------------|------|
+| **Vision Document** | 何を・誰のために作るか、MVPスコープ、対象外機能、未決事項 |
+| **Technical Environment Document** | 言語・フレームワーク・クラウド構成・禁止ライブラリ・サンプルコード |
+
+これらを準備してからチャットで起動します：
 
 ```
-Using AI-DLC, [やりたいことを説明してください]
+I want to start a new project. Please read [ビジョンドキュメントのパス] and
+[技術環境ドキュメントのパス], then begin the AIDLC workflow.
 ```
 
-詳細なセットアップ手順は[セットアップガイド]({{ site.baseurl }}/setup)を参照してください。
+{: .note }
+> ドキュメントなしで起動した場合、AI-DLC が Requirements Analysis で多くの質問を生成します。ドキュメントを先に準備するほど質問が減り、スムーズに進みます。
+
+詳細なセットアップ手順は[セットアップガイド]({{ site.baseurl }}/setup)を、ドキュメントの書き方は[公式テンプレート](https://github.com/awslabs/aidlc-workflows/tree/main/docs/writing-inputs)を参照してください。
 
 ---
 

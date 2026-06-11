@@ -72,7 +72,7 @@ AI-DLCは3フェーズで構成されます。ワークフローはプロジェ�
 | 特徴 | 説明 |
 |------|------|
 | **適応的インテリジェンス** | 複雑さに応じてステージの深さを自動調整。単純なバグ修正はコード生成に直行 |
-| **コンテキスト対応** | 既存コードベースの有無（brownfield/greenfield）を検出して対応 |
+| **コンテキスト対応** | 既存コードベースの有無（brownfield＝既存あり／greenfield＝新規）を検出して対応 |
 | **リスクベース** | 複雑な変更は包括的な処理、シンプルな変更は効率的な処理 |
 | **質問駆動** | 構造化された選択式の質問をファイルに記録。チャットでのインライン質問なし |
 | **常に人間が制御** | 各フェーズの実行計画を確認し、承認してから進む |
@@ -118,11 +118,13 @@ AI-DLCはすべての成果物を `aidlc-docs/` ディレクトリに生成し�
 ```
 aidlc-docs/
 ├── inception/
+│   ├── plans/                  # 実行計画
 │   ├── reverse-engineering/    # 既存コードの解析結果（brownfield）
 │   ├── requirements/           # 要件定義書
 │   ├── user-stories/           # ユーザーストーリー
 │   └── application-design/     # アプリケーション設計
 ├── construction/
+│   ├── plans/                  # 実行計画
 │   ├── {unit-name}/
 │   │   ├── functional-design/  # 機能設計
 │   │   ├── nfr-requirements/   # 非機能要件
@@ -130,6 +132,7 @@ aidlc-docs/
 │   │   ├── infrastructure-design/ # インフラ設計
 │   │   └── code/               # コード生成サマリー
 │   └── build-and-test/         # ビルド・テスト指示
+├── operations/                 # Operationsフェーズ（将来拡張）
 ├── aidlc-state.md              # 進捗状態追跡
 └── audit.md                    # 完全な監査ログ
 ```
