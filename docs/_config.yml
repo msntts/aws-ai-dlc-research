@@ -1,0 +1,37 @@
+title: AWS AI-DLC 調査・解説ドキュメント
+description: AWS AI-Driven Development Life Cycle (AI-DLC) の包括的な調査・解説サイト
+baseurl: ""
+url: ""
+
+remote_theme: just-the-docs/just-the-docs@v0.10.0
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+lang: ja
+
+# Just the Docs 設定
+color_scheme: light
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+
+# フッター
+footer_content: "AWS AI-DLC 調査ドキュメント。情報源: <a href=\"https://aws.amazon.com/jp/blogs/news/ai-driven-development-life-cycle/\">AWS Blog</a> / <a href=\"https://github.com/awslabs/aidlc-workflows\">awslabs/aidlc-workflows</a>"
+
+# コールアウトサポート
+callouts:
+  warning:
+    title: 注意
+    color: yellow
+  note:
+    title: メモ
+    color: blue
+  important:
+    title: 重要
+    color: red
+  tip:
+    title: ヒント
+    color: green
